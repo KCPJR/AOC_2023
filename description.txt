@@ -1,0 +1,24 @@
+I ran the real data for 1000 cycles outputing the score.
+I then number of times each score was present in the 1000.
+There were serval scores that only had one occurance.
+I noticed there were a lot of 11's and 12's.
+Above that there were 22's and 24's.
+There were some additional multiples.
+
+I looked at the scores with 12 occurances figuring that at the 1000 point I must be between the 11th and 12th
+repeat of the pattern.
+
+I looked at all the 12's and found the lowest cycle index which was 101.
+That meant the first 100 cyles were narrowing down.  The beginning of the repeating pattern started with cycle 101.
+
+Difference between scores in the pattern was 78. 
+Meaning the lenght or period of the pattern was 78.
+
+(1000000000 - 100) mod 78 = 42
+
+Meaning cycle 1000000000 was at point 42 in the pattern.
+The cycle started at 101 (the offset before the pattern started was 100.)
+
+The score at cycle 1000000000 was the same as the cycle at 142   (42 + 100)
+
+Plugged that in and submitted it and bingo.  Winner winner.
